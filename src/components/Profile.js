@@ -11,11 +11,9 @@ import {
   Chip,
   LinearProgress,
   Stack,
-  Divider,
   Card,
   CardContent,
   useTheme,
-  useMediaQuery
 } from '@mui/material';
 import {
   AreaChart,
@@ -25,26 +23,15 @@ import {
   CartesianGrid,
   Tooltip,
   ResponsiveContainer,
-  PieChart,
-  Pie,
-  Cell
 } from 'recharts';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
-import TimelineIcon from '@mui/icons-material/Timeline';
 import CircularProgress from '@mui/material/CircularProgress';
-import { format as formatDate, formatDistanceToNow, subYears, startOfDay } from 'date-fns';
-import GradeIcon from '@mui/icons-material/Grade';
+import { format as formatDate, formatDistanceToNow } from 'date-fns';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CancelIcon from '@mui/icons-material/Cancel';
 import TimerIcon from '@mui/icons-material/Timer';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import {
-  Rectangle,
-  ScatterChart,
-  Scatter,
-} from 'recharts';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 import Button from '@mui/material/Button';
 import LeaderboardIcon from '@mui/icons-material/Leaderboard';
@@ -96,7 +83,6 @@ function Profile() {
   const [profile, setProfile] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
   const navigate = useNavigate();
 
   useEffect(() => {

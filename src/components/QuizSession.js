@@ -125,18 +125,9 @@ function QuizSession() {
     }
   };
 
-  const handleNext = () => {
-    if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex(prev => prev + 1);
-    }
-  };
+  
 
-  const handlePrevious = () => {
-    if (currentQuestionIndex > 0) {
-      setCurrentQuestionIndex(prev => prev - 1);
-    }
-  };
-
+  
   const formatAnswersForSubmission = () => {
     return {
       answers: questions.map(question => {

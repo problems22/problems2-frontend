@@ -9,7 +9,6 @@ import {
   Stack,
   Grid,
   Chip,
-  Divider
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
